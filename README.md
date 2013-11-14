@@ -16,7 +16,7 @@ Creating the cluster:
 Architecture Layout:
 --------------------
 
-![HaddopLabLayout](docs/hadoop-lab-layout.png "Haddop Lab Layout")
+![HaddopLabLayout](https://raw.github.com/idontdomath/hadoop-lab/hadoop-2.2.0/doc/hadoop-lab-layout.png "Haddop Lab Layout")
 
 Cluster configuration:
 ----------------------
