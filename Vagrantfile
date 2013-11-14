@@ -3,11 +3,14 @@
 
 Vagrant::Config.run do |config|
   config.vm.box = "base-hadoop"
+
   config.vm.provision :puppet do |puppet|
      puppet.manifests_path = "manifests"
      puppet.manifest_file  = "base-hadoop.pp"
      puppet.module_path = "modules"
   end
+
+  config.vm.share_folder "data", "/vagrant/data", "data", :create => true
 
   config.vm.define :backup do |backup_config|
     backup_config.vm.network :hostonly, "192.168.1.11"
