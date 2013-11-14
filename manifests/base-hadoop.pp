@@ -43,3 +43,28 @@ ssh_authorized_key { "ssh_key":
   user   => "root",
   require => File['/root/.ssh/id_rsa.pub']
 }
+
+file { "/root/.ssh/config":
+  source => "puppet:///modules/hadoop/ssh_config",
+  mode => 644,
+  owner => root,
+  group => root,
+  require => Exec['apt-get update']
+}
+
+# we set the host file to have visibility between the cluster
+host { 'master':
+  ip => '192.168.1.10',
+}
+host { 'backup':
+  ip => '192.168.1.11',
+}
+host { 'haddop1':
+  ip => '192.168.1.12',
+}
+host { 'haddop2':
+  ip => '192.168.1.13',
+}
+host { 'hadoop3':
+  ip => '192.168.1.14',
+}
