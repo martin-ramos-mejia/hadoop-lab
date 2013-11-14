@@ -39,7 +39,14 @@ Cluster configuration:
 - sudo sbin/yarn-daemon.sh --config conf/ start nodemanager
 
 To access the admin interface of HDFS http://192.168.1.10:50070
-We also recommend to use
+
+We also recommend to introduce the name of the machines in the /etc/hosts
+
+> 192.168.1.10    master 
+> 192.168.1.11    backup 
+> 192.168.1.12    hadoop1 
+> 192.168.1.13    hadoop2 
+> 192.168.1.14    haddop3 
 
 Some snippets:
 --------------
