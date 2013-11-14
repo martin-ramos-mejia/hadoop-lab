@@ -13,10 +13,16 @@ Creating the cluster:
 - vagrant box add base-hadoop http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-12042-x64-vbox4210.box
 - vagrant up
 
+Architecture Layout:
+--------------------
+
+![HaddopLabLayout](docs/hadoop-lab-layout.png "Haddop Lab Layout")
+
 Cluster configuration:
 ----------------------
 
-## Setting up the services:
+
+### Setting up the services:
 
 ### Namenode daemon (master machine):
 
