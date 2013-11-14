@@ -2,8 +2,11 @@
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <configuration>
  <property>
-  <name>mapred.job.tracker</name>
-  <value>192.168.1.10:9001</value>
-  <description>The host and port that the MapReduce job tracker runs at.</description>
+  <name>mapreduce.map.memory.mb</name>
+  <value>256</value>
+ </property>
+ <property>
+  <name>mapreduce.task.io.sort.mb</name>
+  <value>128</value>
  </property>
 </configuration>

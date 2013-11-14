@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+<property>
+  <name>yarn.scheduler.capacity.root.queues</name>
+  <value>a</value>
+  <description>The queues at the this level (root is the root queue).
+  </description>
+</property>
+<property>
+  <name>yarn.scheduler.capacity.root.a.capacity</name>
+  <value>100</value>
+</property>
+</configuration>
